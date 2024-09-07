@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/* Media Query */
+
+
+
+/* Telas maiores que 768px */
+
+@media screen and (min-width: 768px) {
+
+    main {
+        background-image: linear-gradient(to bottom, var(--cor4), var(--cor1));
+    }
+    main #acesso {
+        display: block;
+            height: 250px;
+            width: 74vw;
+    }
+    main #acesso #imagen {
+        background-image: url(../imagens/link-md.png);
+        background-position: center bottom;
+        background-size: contain;
+        border-radius: 4px 0 0 4px;
+        display: inline-block;
+        margin: -10px;
+            height: 270px;
+            width: 25vw;
+    }
+    main #acesso #login {
+        display: inline-block;
+        margin-left: 25px;
+            transform: translatey(-35px);
+            width:47vw;
+    }
+    main #acesso #login h1 {
+        margin: -20px;
+            transform: translatey(-30px);
+    }
+    main #acesso #login input#iemail, input#isenha {
+            transform: translate(4px, 3px);
+            width: calc(100% - 45px);
+    }
+    
+}
+
+
+
+/* Telas maiores de 992px */
+
+@media screen and (min-width: 992px) {
+    
+    main #acesso {
+            height: 350px;
+            width: 900px;
+    }
+    main #acesso #imagen {
+        background-image: url(../imagens/link-bg.png);
+        border-radius: 0 4px 4px 0;
+            height: 370px;
+            width: 450px;
+            transform: translate(470px);
+    }
+    main #acesso #login {
+        margin-left: -25px;
+            width:440px;
+            transform: translate(-405px, -70px);
+    }
+    main #acesso #login h1 {
+        font-size: 2em;
+            transform: translatey(-50px);
+    }
+    main #acesso #login p {
+        font-size: 1.1em;
+    }
+    main #acesso #login input#iemail, input#isenha {
+            width: calc(100% - 45px);
+            transform: translate(4px, 3px);
+    }
+
+}
